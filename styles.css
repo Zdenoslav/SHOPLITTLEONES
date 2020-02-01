@@ -1,0 +1,14 @@
+img {
+    width: 30%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+    header > div#logo {
+        line-height: 70px;
+        position: relative;
+    }
