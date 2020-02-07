@@ -9,75 +9,76 @@
     <title>SHOPATLITTLEONES</title>
 </head>
 <header>
-    <div id='logo' class="">
-        <a href=""><img src="pictures/logo.jpg" alt=""></a>
+    <div class="wrapper2">
+        <div class="nav">
+            <div class="left">
+                <a href=""><img src="pictures/logo.jpg" alt=""></a>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">SHOP</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">REVIEWS</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
-
-    <nav>
-        <ul>
-            <li><a href="#">SHOP</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">REVIWES</a></li>
-        </ul>
-    </nav>
-
-
 </header>
 
-
-<h1>LITTLE ONES</h1>
-
+<hr>
 
 <body>
+    <h1>LITTLE ONES</h1>
 
+    </form>
 
-<h2>Lorna Cassar</h2>
-<p>My adress</p>
-<p>090190291021</p>
-<p>lornacasaar@gmail.com</p>
-<hr>
-<form id='MyForm' class='form' method="post" enctype="text/plain">
-    <label for="">Your Name:</label>
-    <input type="text" name="yourName" value=""><br>
-    <label for="">Your Email:</label>
-    <input type="email" name="yourEmail" value=""><br>
-    <label for="">Your Message</label><br>
-    <textarea name="yourMessage" rows="10" cols="30"></textarea><br>
-    <button type="submit" name="button">SEND MESSAGE</button>
-</form>
+    <script type="text/javascript">
+        const MyForm = document.getElementById('MyForm');
 
-<script type="text/javascript">
+        MyForm.addEventListener('submit', (e) => {
 
-    const MyForm = document.getElementById('MyForm');
+            e.preventDefault();
 
-    MyForm.addEventListener('submit', (e) => {
+            console.log('Form has been submitted:')
 
-        e.preventDefault();
+            const request = new XMLHttpRequest();
 
-        console.log('Form has been submitted:')
+            request.open('post', 'form.js')
+            request.onload = function() {
+                console.log(request.responseText);
+            }
 
-        const request = new XMLHttpRequest();
+            request.send();
+        });
+    </script>
 
-        request.open('post', 'form.js')
-        request.onload = function () {
-            console.log(request.responseText);
-        }
+    <hr>
+    <footer>
+        <div class="contact">
+            <h1>Contact Us</h1>
+            <h2>Lorna Cassar</h2>
+            <p>My adress</p>
+            <p>090190291021</p>
+            <p>lornacasaar@gmail.com</p>
+        </div>
+        <div class="form">
+            <form class="" action="index.html" method="post">
+                <input type="text" name="" value="" placeholder="Name">
+                <input type="text" name="" value="" placeholder="E-mail">
+                <input id='msg' type="text" name="" value="" placeholder="Message">
+            </form>
+            <button type="button" name="button">Send Message</button>
 
-        request.send();
-    });
+        </div>
 
-</script>
-
-<hr>
-<footer>
-
-    <div class="wrapper">
-        <h1>Contact Us</h1>
-    <ul>
-        <li><i class="fa fa-facebook"></i></li>
-        <li><i class="fa fa-instagram"></i></li>
-    </ul>
-    </div>
-</footer>
+        <div class="wrapper">
+            <ul>
+                <li><i class="fa fa-facebook"></i></li>
+                <li><i class="fa fa-instagram"></i></li>
+            </ul>
+        </div>
+    </footer>
 </body>
+
 </html>
