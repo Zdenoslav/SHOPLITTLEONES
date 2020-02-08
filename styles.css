@@ -2,12 +2,24 @@ img {
     width: 30%;
 }
 
-body {}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 
 header {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+    position: absolute;
+}
+
+.nav {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 80px;
 }
 
 .left {
@@ -29,15 +41,21 @@ header {
 }
 
 .form {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 20px;
     font-style: italic;
     text-align: center;
 }
 
-footer {}
-
 .contact {
     text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 input {
@@ -77,4 +95,16 @@ li {
     display: inline-block;
     font-size: 30px;
     transition: .5s;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.footer2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }

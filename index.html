@@ -8,77 +8,34 @@
     <meta charset="utf-8">
     <title>SHOPATLITTLEONES</title>
 </head>
-<header>
-    <div class="wrapper2">
-        <div class="nav">
-            <div class="left">
-                <a href=""><img src="pictures/logo.jpg" alt=""></a>
-            </div>
-            <div class="right">
-                <ul>
-                    <li><a href="#">SHOP</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">REVIEWS</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</header>
-
-<hr>
 
 <body>
-    <h1>LITTLE ONES</h1>
+    <header>
+            <div class="nav">
+                <div class="left">
+                    <a href="index.html"><img src="pictures/logo.jpg" alt=""></a>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li><a href="shop.html">SHOP</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="reviews.html">REVIEWS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+    </header>
+    
 
-    </form>
-
-    <script type="text/javascript">
-        const MyForm = document.getElementById('MyForm');
-
-        MyForm.addEventListener('submit', (e) => {
-
-            e.preventDefault();
-
-            console.log('Form has been submitted:')
-
-            const request = new XMLHttpRequest();
-
-            request.open('post', 'form.js')
-            request.onload = function() {
-                console.log(request.responseText);
-            }
-
-            request.send();
-        });
-    </script>
-
-    <hr>
-    <footer>
-        <div class="contact">
-            <h1>Contact Us</h1>
-            <h2>Lorna Cassar</h2>
-            <p>My adress</p>
-            <p>090190291021</p>
-            <p>lornacasaar@gmail.com</p>
-        </div>
-        <div class="form">
-            <form class="" action="index.html" method="post">
-                <input type="text" name="" value="" placeholder="Name">
-                <input type="text" name="" value="" placeholder="E-mail">
-                <input id='msg' type="text" name="" value="" placeholder="Message">
-            </form>
-            <button type="button" name="button">Send Message</button>
-
-        </div>
-
-        <div class="wrapper">
+        <footer>
             <ul>
                 <li><i class="fa fa-facebook"></i></li>
                 <li><i class="fa fa-instagram"></i></li>
             </ul>
-        </div>
-    </footer>
+        </footer>
+
+    <script src="app.js" type="text/javascript"></script>
+
 </body>
 
 </html>
